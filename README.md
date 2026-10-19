@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/cover.png" alt="tdxdraw" width="720"/></p>
+
 # tdxdraw — 通达信画线批量生成与转换工具
 
 把**任意来源的画线坐标清单**（CSV / JSON / 你的分析程序输出）批量转成通达信官方
