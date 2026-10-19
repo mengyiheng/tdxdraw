@@ -107,3 +107,15 @@ pytest
 ## License
 
 MIT
+
+## 量化相关定制需求
+
+作者承接画线自动化与通达信二次开发的定制开发：
+
+| 方向 | 示例 |
+|---|---|
+| 🖍 画线工程化 | 分析系统信号 → 通达信画线管道、多周期批量落图、画线模板管理 |
+| 📐 格式深水区 | 更多画线类型/样式区字段逆向、tdxline.dat 在线注入 |
+| 🛠 私有部署 | 全市场批量导入、CI 自动生成画线、团队共享线组 |
+
+**联系合作**：[Gitee Issues](https://gitee.com/mengyiheng/tdxdraw/issues) 或 [Gitee 私信](https://gitee.com/mengyiheng)。复杂需求请附：画线数据量级、时效要求、期望交付形式。
