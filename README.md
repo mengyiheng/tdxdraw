@@ -94,6 +94,22 @@ pytest
 
 测试基准包含一个**经通达信实测可导入**的真实样本文件（逐字节比对）。
 
+## 免导入直写（v0.2.0，实测有效）
+
+通达信**完全关闭**期间，直接把画线写进客户端存储 `tdxline.dat`，
+下次启动即显示——**无需手动导入**：
+
+```python
+from tdxdraw import Drawing, write_tdxline
+
+d = Drawing("sh", "600519", "hline", 1250.0, 1250.0,
+            date(2026, 1, 5), date(2026, 10, 19), line_id=88)
+write_tdxline(r"D:\new_tdx\new\T0002\tdxline.dat", [d])
+```
+
+前提：通达信必须完全退出（运行中写入会被退出时的内存重写覆盖）；
+操作前请备份 `tdxline.dat`；`line_id` 需在同股票内唯一。
+
 ## 免责声明
 
 本项目仅做画线坐标数据与通达信画线文件格式之间的转换，不提供任何行情数据，
