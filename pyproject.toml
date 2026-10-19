@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tdxdraw"
-version = "0.1.0"
+version = "0.2.0"
 description = "通达信画线文件（.eld）读写与批量生成工具，零依赖"
 readme = "README.md"
 requires-python = ">=3.9"
