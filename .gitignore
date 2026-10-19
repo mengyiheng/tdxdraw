@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.pytest_cache/
+
+# 逆向实验用的本地数据（含个人画线，严禁提交）
+probe/tdxline_backup_before.dat
+probe/tdxline_after.dat
+*.dat
